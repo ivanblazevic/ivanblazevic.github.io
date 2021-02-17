@@ -1,17 +1,7 @@
 import React from "react";
 import styles from "./About.module.scss";
-
-const HeadlineDataItem: React.FC<{ icon: string }> = (props) => (
-  <h2>
-    <i
-      className={[
-        styles.HeadlineDataItemIconWrapper,
-        `fas fa-${props.icon}`,
-      ].join(" ")}
-    ></i>{" "}
-    {props.children}
-  </h2>
-);
+import { HeadlineDataItem } from "./HeadlineDataItem/HeadlineDataItem";
+import { SocialIcon } from "./SocialIcon/SocialIcon";
 
 const About: React.FC = () => (
   <div data-testid="About">
@@ -61,16 +51,22 @@ const About: React.FC = () => (
       accept critique and other opinions.
     </p>
 
-    <div className="download text-center">
+    <div className={styles.Download}>
       <a target="_blank" href="assets/CV.pdf">
         <i className="fas fa-download"></i>&nbsp;<span>Download CV</span>
       </a>
     </div>
 
-    <div className="text-center social">
-      {/* <app-social icon="stack-overflow" url="https://stackoverflow.com/users/1630166/blazh"></app-social>
-  <app-social icon="linkedin" url="https://www.linkedin.com/in/iblazevic"></app-social>
-  <app-social icon="skype" url="skype:blazh985?userinfo"></app-social> */}
+    <div className={styles.SocialIconsContainer}>
+      <SocialIcon
+        icon="stack-overflow"
+        url="https://stackoverflow.com/users/1630166/blazh"
+      ></SocialIcon>
+      <SocialIcon
+        icon="linkedin"
+        url="https://www.linkedin.com/in/iblazevic"
+      ></SocialIcon>
+      <SocialIcon icon="skype" url="skype:blazh985?userinfo"></SocialIcon>
     </div>
   </div>
 );

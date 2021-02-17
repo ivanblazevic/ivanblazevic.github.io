@@ -15,11 +15,6 @@
   margin-left: 50px;
 }
 
-.HeadlineDataItemIconWrapper {
-  width: 30px;
-  text-align: center;
-}
-
 .ProfileName {
   font-size: 4em;
   margin-top: 10px;
@@ -31,14 +26,16 @@
   font-size: 18px;
 }
 
-.download {
+.Download {
   padding: 50px 0;
+  text-align: center;
+
   a {
     text-decoration: none;
   }
 }
 
-.social {
+.SocialIconsContainer {
   display: flex;
   justify-content: center;
 }

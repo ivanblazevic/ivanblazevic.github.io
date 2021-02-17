@@ -1,0 +1,16 @@
+@import "./../../../shared/styles/variables.scss";
+
+.SocialIcon {
+  width: 50px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+  a {
+    color: $secondary-color;
+    font-size: 40px;
+  }
+}
