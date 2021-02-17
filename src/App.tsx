@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-} from "react-router-dom";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import About from "./components/About/About.lazy";
 import Experience from "./components/Experience/Experience.lazy";
@@ -13,7 +8,7 @@ import OpenSource from "./components/OpenSource/OpenSource.lazy";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Header></Header>
 
@@ -33,7 +28,7 @@ function App() {
           </Switch>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

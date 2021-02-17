@@ -1,9 +1,14 @@
+@import "../../shared/styles/variables";
+
 .HeaderSection {
   display: flex;
 }
 
 .ProfileImage {
   border-radius: 100%;
+  padding: 4px;
+  vertical-align: middle;
+  border: 2px solid $primary-color;
 }
 
 .ProfileHeadlineData {

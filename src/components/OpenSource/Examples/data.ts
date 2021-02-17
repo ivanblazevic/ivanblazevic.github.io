@@ -7,7 +7,7 @@ export const EXAMPLE_DATA: OpenSourceItem[] = [
     img: "assets/maps.jpg",
   },
   {
-    link: "https://github.com/ivanblazevic/cv",
+    link: "https://github.com/ivanblazevic/ivanblazevic.github.io",
     title: "This CV as code example",
     img: "assets/cv_as.jpg",
   },
