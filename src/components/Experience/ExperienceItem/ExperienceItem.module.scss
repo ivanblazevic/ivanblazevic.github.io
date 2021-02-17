@@ -1,0 +1,41 @@
+.ExperienceItem {
+    display: flex;
+
+    .Date {
+        margin-top: 10px;
+        min-width: 150px;
+        text-align: right;
+    }
+
+    .CompanyLogo {
+        width: 120px;
+        margin-top: 12px;
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */  
+        &:hover {
+            filter: none;
+            -webkit-filter: grayscale(0%);
+        }
+    }
+
+    .Separator {
+        margin: 0 20px;
+        position: relative;
+
+        .Line {
+            position: absolute;
+            top: 0;
+            bottom: 4px;
+            width: 1px;
+            border-right: 4px dotted rgba(0,0,0, 0.2);
+        }
+    }
+
+    .Title {
+        margin-top: 0;
+    }
+
+    .LineItem {
+        line-height: 30px;
+    }
+}

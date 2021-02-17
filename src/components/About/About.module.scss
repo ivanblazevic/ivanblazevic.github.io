@@ -1,0 +1,39 @@
+.HeaderSection {
+  display: flex;
+}
+
+.ProfileImage {
+  border-radius: 100%;
+}
+
+.ProfileHeadlineData {
+  margin-left: 50px;
+}
+
+.HeadlineDataItemIconWrapper {
+  width: 30px;
+  text-align: center;
+}
+
+.ProfileName {
+  font-size: 4em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.ProfileDescription {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.download {
+  padding: 50px 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
