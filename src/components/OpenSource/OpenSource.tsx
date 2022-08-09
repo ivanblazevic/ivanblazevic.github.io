@@ -14,19 +14,7 @@ const OpenSource: React.FC = () => {
 
   return (
     <>
-      <div className={styles.TabsContainer}>
-        <RoundedButton
-          label="libraries"
-          active={(view as View) === (View.Libraries as View)}
-          onClick={() => setView(View.Libraries)}
-        />
-
-        <RoundedButton
-          label="code examples"
-          active={(view as View) === (View.Examples as View)}
-          onClick={() => setView(View.Examples)}
-        />
-      </div>
+      <h3>Community Contributions</h3>
 
       {(view as View) === (View.Libraries as View) && <Libraries />}
 

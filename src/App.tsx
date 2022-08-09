@@ -3,16 +3,22 @@ import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience.lazy";
+import Heading from "./components/Heading/Heading";
 import OpenSource from "./components/OpenSource/OpenSource.lazy";
 
 function App() {
   return (
     <HashRouter>
       <div className="App">
-        {/* <Header></Header> */}
+        <Heading></Heading>
+
+        <Experience />
+
+        <OpenSource />
+
         <About />
 
-        <div className="App-router-container">
+        {/* <div className="App-router-container">
           <Switch>
             <Route path="/about">
               <About />
@@ -26,7 +32,7 @@ function App() {
 
             <Redirect from="/" to="experience" />
           </Switch>
-        </div>
+        </div> */}
       </div>
     </HashRouter>
   );

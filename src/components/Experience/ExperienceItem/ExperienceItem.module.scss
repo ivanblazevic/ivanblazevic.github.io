@@ -1,41 +1,35 @@
 .ExperienceItem {
-    display: flex;
+  margin: 32px;
+  padding: 32px;
+  background: white;
+  border-radius: 32px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+
+  .DateContainer {
+    text-align: center;
 
     .Date {
-        margin-top: 10px;
-        min-width: 150px;
-        text-align: right;
+      margin-top: 12px;
+      font-weight: 700;
     }
+  }
 
-    .CompanyLogo {
-        width: 120px;
-        margin-top: 12px;
-        filter: gray; /* IE6-9 */
-        -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */  
-        &:hover {
-            filter: none;
-            -webkit-filter: grayscale(0%);
-        }
+  .CompanyLogo {
+    height: 62px;
+    margin-top: 12px;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    &:hover {
+      filter: none;
+      -webkit-filter: grayscale(0%);
     }
+  }
 
-    .Separator {
-        margin: 0 20px;
-        position: relative;
+  .Title {
+    text-align: center;
+  }
 
-        .Line {
-            position: absolute;
-            top: 0;
-            bottom: 4px;
-            width: 1px;
-            border-right: 4px dotted rgba(0,0,0, 0.2);
-        }
-    }
-
-    .Title {
-        margin-top: 0;
-    }
-
-    .LineItem {
-        line-height: 30px;
-    }
+  .LineItem {
+    line-height: 30px;
+  }
 }

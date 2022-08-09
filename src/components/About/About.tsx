@@ -5,32 +5,7 @@ import { SocialIcon } from "./SocialIcon/SocialIcon";
 
 const About: React.FC = () => (
   <div data-testid="About">
-    <div className={styles.HeaderSection}>
-      <div className="text-center">
-        <img
-          className={styles.ProfileImage}
-          width="300"
-          alt="Angular Logo"
-          src="assets/profile_512.jpg"
-        />
-      </div>
-
-      <div className={styles.ProfileHeadlineData}>
-        <h1 className={styles.ProfileName}>Ivan Blažević</h1>
-        <div className="info-section">
-          <HeadlineDataItem icon="map-marker-alt">
-            Vienna, Austria
-          </HeadlineDataItem>
-          <HeadlineDataItem icon="university">
-            Software Developer
-          </HeadlineDataItem>
-          <HeadlineDataItem icon="envelope">
-            <a href="mailto:iblazevi@gmail.com">iblazevi@gmail.com</a>
-          </HeadlineDataItem>
-          <HeadlineDataItem icon="phone">(+43) 664 629 0512</HeadlineDataItem>
-        </div>
-      </div>
-    </div>
+    <h3>About me</h3>
 
     <p className={styles.ProfileDescription}>
       With over 15 years of experience in software development and working with
@@ -51,6 +26,17 @@ const About: React.FC = () => (
       accept critique and other opinions.
     </p>
 
+    <br />
+
+    <div className="info-section text-center">
+      <HeadlineDataItem icon="map-marker-alt">Vienna, Austria</HeadlineDataItem>
+      <HeadlineDataItem icon="university">Software Developer</HeadlineDataItem>
+      <HeadlineDataItem icon="envelope">
+        <a href="mailto:iblazevi@gmail.com">iblazevi@gmail.com</a>
+      </HeadlineDataItem>
+      <HeadlineDataItem icon="phone">(+43) 664 629 0512</HeadlineDataItem>
+    </div>
+
     <div className={styles.Download}>
       <a target="_blank" href="assets/CV.pdf">
         <i className="fas fa-download"></i>&nbsp;<span>Download CV</span>
@@ -68,6 +54,10 @@ const About: React.FC = () => (
       ></SocialIcon>
       <SocialIcon icon="skype" url="skype:blazh985?userinfo"></SocialIcon>
     </div>
+
+    <br />
+    <br />
+    <br />
   </div>
 );
 

@@ -4,7 +4,7 @@ export const EXPERIENCES: ExperienceItemData[] = [
   {
     title: "Lead Frontend Developer, Platomics GMBH",
     date: "2019 - present",
-    logo: "platomics.webp",
+    logo: "platomics.png",
     site: "https://www.platomics.com",
     items: [
       "Creating HQ prototypes using Figma",
@@ -17,7 +17,7 @@ export const EXPERIENCES: ExperienceItemData[] = [
     ],
   },
   {
-    title: "Lead Frontend Developer, PALFINGER AG",
+    title: "Senior Frontend Developer, PALFINGER AG",
     date: "2018 - 2019",
     logo: "palfinger.svg",
     site: "https://www.palfinger.com",
@@ -50,7 +50,7 @@ export const EXPERIENCES: ExperienceItemData[] = [
   {
     title: "DevOps, NTH Mobile",
     date: "2009 - 2013",
-    logo: "nth.png",
+    logo: "nth.svg",
     site: "https://www.nth-mobile.com",
     items: [
       "Platform/db administrator, maintenance and troubleshooting, system integration",

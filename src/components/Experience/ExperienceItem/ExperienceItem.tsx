@@ -7,12 +7,8 @@ interface ExperienceItemProps {
 }
 
 const ExperienceItem: React.FC<ExperienceItemProps> = (props) => (
-  // <div className={styles.ExperienceItem} data-testid="ExperienceItem">
-  //   {JSON.stringify(props.data)}
-  // </div>
   <div className={styles.ExperienceItem}>
-    <div className={styles.Date}>
-      <div>{props.data.date}</div>
+    <div className={styles.DateContainer}>
       <a rel="noreferrer" target="_blank" href={props.data.site}>
         <img
           className={styles.CompanyLogo}
@@ -20,11 +16,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = (props) => (
           alt={props.data.logo}
         />
       </a>
+      <div className={styles.Date}>{props.data.date}</div>
     </div>
 
-    <div className={styles.Separator}>
-      <div className={styles.Line}></div>
-    </div>
     <div className={styles.Content}>
       <h1 className={styles.Title}>{props.data.title}</h1>
       <ul>
