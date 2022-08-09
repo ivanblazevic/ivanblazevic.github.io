@@ -1,4 +1,5 @@
 import React from "react";
+import MainBox from "../../../shared/components/MainBox/MainBox";
 import { ExperienceItemData } from "../ExperienceItemData.model";
 import styles from "./ExperienceItem.module.scss";
 
@@ -7,7 +8,7 @@ interface ExperienceItemProps {
 }
 
 const ExperienceItem: React.FC<ExperienceItemProps> = (props) => (
-  <div className={styles.ExperienceItem}>
+  <MainBox>
     <div className={styles.DateContainer}>
       <a rel="noreferrer" target="_blank" href={props.data.site}>
         <img
@@ -29,7 +30,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = (props) => (
         ))}
       </ul>
     </div>
-  </div>
+  </MainBox>
 );
 
 export default ExperienceItem;

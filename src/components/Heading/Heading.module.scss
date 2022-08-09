@@ -1,27 +1,42 @@
 @import "../../shared/styles/variables";
 
 .HeaderSection {
-  display: flex;
-}
+  position: relative;
 
-.ProfileImage {
-  border-radius: 100%;
-  padding: 4px;
-  vertical-align: middle;
-  border: 2px solid $primary-color;
-}
+  .ProfileImage {
+    width: calc(100% + 64px);
+    vertical-align: middle;
+    margin: -32px;
+  }
 
-.ProfileHeadlineData {
-  margin-left: 50px;
-}
+  .BasicInfo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-.ProfileName {
-  font-size: 4em;
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
+  .ProfileHeadlineData {
+    font-size: 24px;
+    width: 420px;
+    margin-right: -28px;
 
-.ProfileDescription {
-  text-align: justify;
-  font-size: 18px;
+    li {
+      margin-bottom: 12px;
+    }
+  }
+
+  .ProfileName {
+    font-size: 4em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .ProfileDescription {
+    text-align: justify;
+    font-size: 18px;
+  }
 }
