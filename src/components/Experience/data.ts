@@ -8,11 +8,12 @@ export const EXPERIENCES: ExperienceItemData[] = [
     site: "https://www.platomics.com",
     items: [
       "Creating HQ prototypes using Figma",
-      "Pipeline integration using docker images on GitLabs",
+      "Pipeline integrations, microservices",
       "Leading small frontend team, interviewing candidates",
       "Ensuring code quality using linters and SonarQube",
       "Working in the agile process model (Scrum)",
-      "Implementation using Angular 8, NGXS for state management, TestCafe (e2e tests) & JEST (unit tests), Swagger & OpenAPI for communication with backend",
+      "Implementation using Angular 12, NGXS, TestCafe (e2e tests) & JEST (unit tests), Swagger & OpenAPI for communication with backend",
+      "Microfrontends, shared libraries",
     ],
   },
   {
