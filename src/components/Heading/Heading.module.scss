@@ -1,0 +1,27 @@
+@import "../../shared/styles/variables";
+
+.HeaderSection {
+  display: flex;
+}
+
+.ProfileImage {
+  border-radius: 100%;
+  padding: 4px;
+  vertical-align: middle;
+  border: 2px solid $primary-color;
+}
+
+.ProfileHeadlineData {
+  margin-left: 50px;
+}
+
+.ProfileName {
+  font-size: 4em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.ProfileDescription {
+  text-align: justify;
+  font-size: 18px;
+}

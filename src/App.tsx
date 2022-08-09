@@ -1,16 +1,16 @@
 import React from "react";
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import About from "./components/About/About.lazy";
+import About from "./components/About/About";
 import Experience from "./components/Experience/Experience.lazy";
-import Header from "./components/Header/Header";
 import OpenSource from "./components/OpenSource/OpenSource.lazy";
 
 function App() {
   return (
     <HashRouter>
       <div className="App">
-        <Header></Header>
+        {/* <Header></Header> */}
+        <About />
 
         <div className="App-router-container">
           <Switch>
