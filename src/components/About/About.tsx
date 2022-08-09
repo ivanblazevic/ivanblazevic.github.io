@@ -31,9 +31,12 @@ const About: React.FC = () => (
 
     <br />
 
-    <div className="info-section text-center">
+    <div className={`${styles.InfoSection} text-center`}>
       <HeadlineDataItem icon="map-marker-alt">Vienna, Austria</HeadlineDataItem>
-      <HeadlineDataItem icon="university">Software Developer</HeadlineDataItem>
+      <HeadlineDataItem icon="university">
+        Faculty of Electrical Engineering, Computer Science and Information
+        Technology Osijek
+      </HeadlineDataItem>
       <HeadlineDataItem icon="envelope">
         <a href="mailto:iblazevi@gmail.com">iblazevi@gmail.com</a>
       </HeadlineDataItem>
@@ -56,11 +59,17 @@ const About: React.FC = () => (
         url="https://www.linkedin.com/in/iblazevic"
       ></SocialIcon>
       <SocialIcon icon="skype" url="skype:blazh985?userinfo"></SocialIcon>
+      <SocialIcon
+        icon="github"
+        url="https://github.com/ivanblazevic"
+      ></SocialIcon>
     </div>
 
     <br />
     <br />
     <br />
+
+    <p className={styles.Copyright}>©2022 ivanblazevic.github.io</p>
   </div>
 );
 
