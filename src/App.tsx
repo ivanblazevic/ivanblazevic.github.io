@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.scss";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience.lazy";
